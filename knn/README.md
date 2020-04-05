@@ -66,19 +66,19 @@ what can you say about the behavior of kNN classifiers in large dimensions?**
 
 Following are the plots for the 2-dimensional sample: (the same order as the problem question)
 
-![](/plots/plota1.png "lengths of the samples for the 2-dimensional")
+![](./plots/plota1.png "lengths of the samples for the 2-dimensional")
 
-![](/plots/plota2.png "distances between all pairs for the 2-dimensional")
+![](./plots/plota2.png "distances between all pairs for the 2-dimensional")
 
-![](/plots/plota3.png "inner products between all pairs for the 2-dimensional")
+![](./plots/plota3.png "inner products between all pairs for the 2-dimensional")
 
 Following are the plots for the 100-dimensional sample: (the same order as the problem question)
 
-![](/plots/plotb1.png "lengths of the samples for the 100-dimensional")
+![](./plots/plotb1.png "lengths of the samples for the 100-dimensional")
 
-![](/plots/plotb2.png "distances between all pairs for the 100-dimensional")
+![](./plots/plotb2.png "distances between all pairs for the 100-dimensional")
 
-![](/plots/plotb3.png "inner products between all pairs for the 100-dimensional")
+![](./plots/plotb3.png "inner products between all pairs for the 100-dimensional")
 
 We can see that the inner products of all pairs are very close to 0, and random angles are all square! ( or as mentioned in the book EVERYONE LIVES NEAR THE EQUATOR). 
 
