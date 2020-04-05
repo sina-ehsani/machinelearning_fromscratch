@@ -18,24 +18,7 @@
 Tests have been provided in the `test_nn.py` file.
 To run all the provided tests, run the ``pytest`` script from the directory
 containing ``test_nn.py``.
-Initially, you will see output like:
-```
-============================= test session starts ==============================
-platform darwin -- Python 3.7.4, pytest-5.0.1, py-1.8.0, pluggy-0.12.0
-rootdir: .../feedforward-networks-<your-username>
-plugins: timeout-1.3.3
-collected 4 items
 
-test_nn.py FFFF                                                          [100%]
-
-=================================== FAILURES ===================================
-...
-=========================== 4 failed in 2.56 seconds ===========================
-```
-This indicates that all tests are failing, which is expected since you have not
-yet written the code for any of the methods.
-Once you have written the code for all methods, you should instead see
-something like:
 ```
 ============================= test session starts ==============================
 platform darwin -- Python 3.7.4, pytest-5.0.1, py-1.8.0, pluggy-0.12.0
