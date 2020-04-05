@@ -20,7 +20,7 @@
 The tests show how each of the methods is expected to be used.
 To run all the provided tests, run the ``pytest`` script from the directory
 containing ``test_nn.py``.
-Initially, you will see output like:
+
 ```
 ============================= test session starts ==============================
 platform darwin -- Python 3.7.4, pytest-5.0.1, py-1.8.0, pluggy-0.12.0
