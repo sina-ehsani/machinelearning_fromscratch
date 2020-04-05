@@ -53,20 +53,20 @@ For these reports, we used k=10 for all models, and we used the models that we'r
 ### OVA:
 Here is the OVA with k=10 confusion matrix for the test set. (47.06% accuracy on test)
 
-![](/plots/ova10.png "OVA , k=10, a=47.06%")
+![](./plots/ova10.png "OVA , k=10, a=47.06%")
 
 As you can see our innovation for the OVA (mentioned in question 1) led to having more miss classification for the most common label ('1' in this dataset). However, it also helped to increase the overall accuracy and the True Positive and Recall for this label. 
 
 ### AVA:
 And the following is the AVA with k=10 confusion matrix for the test set. (43.53% accuracy on test)
 
-![](/plots/ava10.png "AVA , k=10, a=43.53%")
+![](./plots/ava10.png "AVA , k=10, a=43.53%")
 
 ### Binary Tree Tournament:
 
 BTT with k=10 confusion matrix for the test set. (40.00% accuracy on test)
 
-![](/plots/btt10.png "Binary Tree Tournament , k=10, a=40.00%")
+![](./plots/btt10.png "Binary Tree Tournament , k=10, a=40.00%")
 
 This matrix is kind of similar to the one achieved with the AVA.
 
@@ -75,9 +75,9 @@ This matrix is kind of similar to the one achieved with the AVA.
 
 Since the data is not evenly between the classes the accuracy might not be a good metric. You can see the data distribution in the following:
 
-![](/plots/labels.png "Training set labels histogram")
-![](/plots/label_val.png "Validation set labels histogram")
-![](/plots/label_test.png "Test set labels histogram")
+![](./plots/labels.png "Training set labels histogram")
+![](./plots/label_val.png "Validation set labels histogram")
+![](./plots/label_test.png "Test set labels histogram")
 
 In addition, as you can see from the above histogram, the distribution for the training, dev, and test sets dose not seem to be the same. Some labels that are in the test/dev sets do not even exist in the training set. These all result in poor classification performance (especially when overfitting too much on the training set).
 
