@@ -55,15 +55,15 @@ For the KNN you can get around **98%** for all sets with k=5. For the decision t
 
 To understand the data a bit better, we fist polted the data on all posible pair of features: 
 
-![](/plots/plot1.png "polt before the feature transformation")
-![](/plots/plot2.png "polt before the feature transformation")
-![](/plots/plot3.png "polt before the feature transformation")
+![](./plots/plot1.png "polt before the feature transformation")
+![](./plots/plot2.png "polt before the feature transformation")
+![](./plots/plot3.png "polt before the feature transformation")
 
 From the polts it can understand that the data is a sphere, so we take the absolute value. The following are the polts after taking the absolute value of all the features.
 
-![](/plots/plot4.png "polt after the feature transformation(absolure value)")
-![](/plots/plot5.png "polt after the feature transformation(absolure value)")
-![](/plots/plot6.png "polt after the feature transformation(absolure value)")
+![](./plots/plot4.png "polt after the feature transformation(absolure value)")
+![](./plots/plot5.png "polt after the feature transformation(absolure value)")
+![](./plots/plot6.png "polt after the feature transformation(absolure value)")
 
 This shows that the data now can be linearly separable. Here is the results after the feature transform (for k=10000) 
 
