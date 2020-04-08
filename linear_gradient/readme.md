@@ -18,8 +18,7 @@ And here is the plot for the l2=0.01 and leaning rate = 0.01.
 
 2. **Design a procedure for early stopping, based on monitoring the validation error. What are the accuracies you obtain for the regularization values above? Discuss.**
 
-Adding the early stopping, the model achives the okay reults as soon as 5 steps. However the problem is that it wonuld not reach the global minimum that we can see from the above plot. To achive that we have to add a delay to our early stopping. In this delayed model it will check if the validation loss is getting bigger than 100 steps before it. This delay helps us achive the best result. In practice we have to save weights for the perivious model so we can pick the one with the lowst val-loss.
-
+Adding the early stopping, the model achieves the okay results as soon as 5 steps. However, the problem is that it would not reach the global minimum that we can see from the above plot. To achieve that we have to add a delay to our early stopping. In this delayed model it will check if the validation loss is getting bigger than 100 steps before it. This delay helps us achieve the best result. In practice, we have to save weights for the previous model so we can pick the one with the lowest val-loss.
 
 | REGRESSION | with l2=0.01  | with ES step=3 | with ES step=100 |
 | ----------- | ---- | ------| ------- |
@@ -45,11 +44,11 @@ Adding the early stopping, the model achives the okay reults as soon as 5 steps.
 
 1. **Run the classifier for the `agaricus-lepiota` dataset under the same regularization values as above. You might have to experiment with the learning rate for the algorithm to converge. What are the validation and training losses you obtain?**
 
-Following are result with learning rate of 0.1 and regularization of 0.1. This model run for 326 iterations to achive the quadratic norm of the gradient of below 10<sup>-4</sup>.
+The following are the results achieved with the learning rate of 0.1 and regularization of 0.1. This model ran for 326 iterations to achieve the quadratic norm of the gradient of below 10<sup>-4</sup>.
 
 
 
-|Logestic|accurecy|
+|Logestic|accuracy|
 |-------|-----|
 |  Training:   | 93.08%|
 |  Validation: | 92.76%|
@@ -64,18 +63,18 @@ Following are result with learning rate of 0.1 and regularization of 0.1. This m
 
 2. **Does early stopping help in this case?**
 
-In this case early stopping works. After adding early stopping the following results were achived. 
+In this case early stopping works. After adding early stopping the following results were achieved. 
 
 
-|Logestic|accurecy|
+|Logestic|accuracy|
 |-------|-----|
 |  Training:   | 92.98%|
 |  Validation: | 92.71%|
 |  Testing:    | 92.71%|
 
-As you can see the accurecy is similar, but we were able to obtai this accurecy after only 5 iterations (compared to 326 iterations wihout early stopping)
+As you can see the accuracy is similar, but we were able to obtain this accuracy after only 5 iterations (compared to 326 iterations without early stopping)
 
-Here is the the early stopping loss plot: 
+Here is the early stopping loss plot: 
 
 ![](./plots/logestic_earlyS.png "training and validtion loss with early stopping for LOGISTIC LOSS")
 
@@ -95,9 +94,9 @@ While experimenting with the regularization term, it did not show a huge diffren
 | iter_num  | 25 | 25 | 25 | 32 | 25 |
 | val_loss | 0.02| 0.02 | 0.03 | 0.02 |0.02 | 
 
-And here is the accurecy of the model:
+And here is the accuracy of the model:
 
-|SVM|accurecy|
+|SVM|accuracy|
 |-------|-----|
 |  Training:   | 99.11%|
 |  Validation: | 98.92%|
@@ -105,7 +104,7 @@ And here is the accurecy of the model:
 
 2. **Does early stopping help in this case?**
 
-The early stopping would not help either becouse for the SVM, the model is getting better after each iteration. This can be shown in the following plot:
+The early stopping would not help either because, for the SVM, the model is getting better after each iteration. This can be shown in the following plot:
 
 ![](./plots/svm_plt.png "training and validtion loss for HINGE LOSS")
 
