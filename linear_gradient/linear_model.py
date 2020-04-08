@@ -70,11 +70,14 @@ class LinearModel(object):
             
             
             self.weights = list(map(sub , self.weights , galpha))
-            # self.weights = list(map(add , self.weights , galpha))
 
 
             print("\r  Train: %.2f Validation: %.2f log10(|g|): %.2f          " % (training_loss, validation_loss, math.log10(dot(g, g))), end='')
             n_iter += 1
+
+
+            # if n_iter % 10 == 0:
+            #   print( n_iter ,self.weights )
             
             
             # # Early Stopping:

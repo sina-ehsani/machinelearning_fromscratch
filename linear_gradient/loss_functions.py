@@ -35,5 +35,5 @@ class HingeLoss(object):
         t=sample.label
         if t*y >= 1:
             return list(map(lambda x : x * 0 ,sample.features ))
-        else: return list(map(lambda x : -x * prediction ,sample.features ))
+        else: return list(map(lambda x : -x * t ,sample.features ))
 
